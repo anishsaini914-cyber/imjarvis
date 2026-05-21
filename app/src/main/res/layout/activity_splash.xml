@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JARVIS"
+            android:textColor="@color/neon_blue"
+            android:textSize="56sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:shadowColor="@color/neon_blue"
+            android:shadowRadius="20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/splash_tagline"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="16sp"
+            android:letterSpacing="0.05" />
+
+        <ProgressBar
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="48dp"
+            android:indeterminateTint="@color/neon_blue" />
+
+    </LinearLayout>
+
+</FrameLayout>

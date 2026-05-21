@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0E27"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Provider Settings"
+            android:textColor="#00D4FF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#12163A"
+            app:strokeColor="#1A1F4A"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Provider"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_spinner"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="16dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputApiKey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="API Key"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#7B8BB8"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSaveApiKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Save API Key"
+                    android:textAllCaps="false"
+                    app:cornerRadius="24dp"
+                    app:backgroundTint="#00D4FF"
+                    android:textColor="#0A0E27"
+                    android:layout_marginBottom="16dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Model Name (e.g., gpt-4o-mini)"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#7B8BB8" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSaveModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Save Model"
+                    android:textAllCaps="false"
+                    app:cornerRadius="24dp"
+                    app:backgroundTint="#1A1F4A"
+                    app:strokeColor="#00D4FF"
+                    app:strokeWidth="1dp"
+                    android:textColor="#00D4FF" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

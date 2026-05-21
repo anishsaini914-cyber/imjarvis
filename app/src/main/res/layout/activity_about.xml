@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0E27">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#12163A"
+        app:title="About"
+        app:titleTextColor="#00D4FF"
+        app:navigationIcon="@drawable/ic_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/bg_circle"
+            android:text="J"
+            android:textColor="#00D4FF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="J.A.R.V.I.S."
+            android:textColor="#00D4FF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1" />
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.0"
+            android:textColor="#7B8BB8"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <View
+            android:layout_width="64dp"
+            android:layout_height="2dp"
+            android:background="#00D4FF"
+            android:layout_marginVertical="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developer"
+            android:textColor="#7B8BB8"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANISH SAINI"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textColor="#7B8BB8"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anishsaini939@gmail.com"
+            android:textColor="#00D4FF"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024 Jarvis AI Assistant"
+            android:textColor="#7B8BB8"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

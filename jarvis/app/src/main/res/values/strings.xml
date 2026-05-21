@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JARVIS</string>
+    <string name="app_full_name">JARVIS AI Assistant</string>
+    <string name="app_description">Your intelligent AI assistant powered by advanced machine learning.</string>
+    <string name="developer_name">Anish Saini</string>
+    <string name="developer_email">anishsaini939@gmail.com</string>
+    <string name="chat_hint">Type a message...</string>
+    <string name="voice_hint">Tap to speak</string>
+    <string name="settings_title">Settings</string>
+    <string name="about_title">About</string>
+    <string name="permissions_title">Permissions</string>
+    <string name="wake_word_title">Wake Word</string>
+    <string name="overlay_title">Floating Overlay</string>
+    <string name="chat_title">Chat</string>
+    <string name="voice_title">Voice Assistant</string>
+    <string name="greeting_morning">Good Morning</string>
+    <string name="greeting_afternoon">Good Afternoon</string>
+    <string name="greeting_evening">Good Evening</string>
+    <string name="api_key_hint">API Key</string>
+    <string name="model_hint">Model</string>
+    <string name="save_button">Save Settings</string>
+    <string name="next_button">Next</string>
+    <string name="get_started_button">Get Started</string>
+    <string name="back_button">Back</string>
+</resources>

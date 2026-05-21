@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Jarvis.Headline" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">@color/on_background</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="TextAppearance.Jarvis.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/on_background</item>
+    </style>
+
+    <style name="TextAppearance.Jarvis.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <style name="TextAppearance.Jarvis.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <style name="TextAppearance.Jarvis.Neon" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/neon_blue</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

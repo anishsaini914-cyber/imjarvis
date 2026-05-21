@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Jarvis" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#FF0D47A1</item>
+        <item name="colorPrimaryDark">#FF001064</item>
+        <item name="colorAccent">#FF00E5FF</item>
+        <item name="colorSecondary">#FF00E5FF</item>
+        <item name="colorOnPrimary">#FFFFFFFF</item>
+        <item name="colorOnSecondary">#FF000000</item>
+        <item name="android:colorBackground">#FF0A0A0F</item>
+        <item name="colorSurface">#FF1A1A2E</item>
+        <item name="colorOnSurface">#FFE0E0E0</item>
+        <item name="android:statusBarColor">#FF0A0A0F</item>
+        <item name="android:navigationBarColor">#FF0A0A0F</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="Theme.Jarvis.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_jarvis</item>
+        <item name="postSplashScreenTheme">@style/Theme.Jarvis</item>
+    </style>
+
+    <style name="Theme.Jarvis.FullScreen" parent="Theme.Jarvis">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

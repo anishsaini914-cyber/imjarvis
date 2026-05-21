@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:background="@color/surface_dark">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back"
+            android:tint="@color/text_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Local Models"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnScanModels"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/neon_blue"
+            android:text="Scan"
+            android:textColor="@color/background_dark" />
+
+        <Button
+            android:id="@+id/btnImportModel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/surface_dark"
+            android:text="Import"
+            android:textColor="@color/neon_blue" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Local model support uses llama.cpp. Import GGUF/GGML format models."
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textModelsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No models found"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+    </ScrollView>
+
+</LinearLayout>

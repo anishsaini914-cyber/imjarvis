@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/select_provider"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_openai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="OpenAI"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rb_gemini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Gemini"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rb_agentrouter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Agent Router"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rb_local"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Local Model"
+                android:textColor="@color/text_primary" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/openai_settings"
+            android:textColor="@color/neon_blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/NeonTextInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_openai_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/openai_api_key"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/NeonTextInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_openai_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/openai_model"
+                android:text="gpt-4"
+                android:textColor="@color/text_primary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/gemini_settings"
+            android:textColor="@color/neon_blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/NeonTextInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_gemini_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/gemini_api_key"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/NeonTextInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_gemini_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/gemini_model"
+                android:text="gemini-pro"
+                android:textColor="@color/text_primary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/agentrouter_settings"
+            android:textColor="@color/neon_blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/NeonTextInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_agentrouter_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/agentrouter_api_key"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/NeonTextInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_agentrouter_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/agentrouter_model"
+                android:text="gpt-4"
+                android:textColor="@color/text_primary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/NeonTextInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_agentrouter_endpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/agentrouter_endpoint"
+                android:text="https://agentrouter.org"
+                android:textColor="@color/text_primary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            style="@style/NeonButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</ScrollView>

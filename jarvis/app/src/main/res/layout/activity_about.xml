@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="4dp"
+        android:background="@color/surface_dark">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back"
+            android:tint="@color/text_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="About"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_assistant"
+        android:tint="@color/neon_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="JARVIS"
+        android:textColor="@color/neon_blue"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Version 1.0.0"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:text="Your intelligent AI assistant powered by advanced machine learning. Controls your device, answers questions, and automates tasks with voice commands."
+        android:textColor="@color/text_primary"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="24dp"
+        android:background="@color/surface_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Anish Saini"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Contact"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="anishsaini939@gmail.com"
+        android:textColor="@color/neon_blue"
+        android:textSize="16sp" />
+
+</LinearLayout>
