@@ -1,30 +1,18 @@
 {
-    "name": "JARVIS Android Development",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "vscjava.vscode-java-pack",
-                "fwcd.kotlin",
-                "mathiasfritsche.kotlin-formatter",
-                "github.vscode-github-actions",
-                "redhat.vscode-xml"
-            ],
-            "settings": {
-                "java.configuration.updateBuildConfiguration": "automatic",
-                "java.jdt.ls.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
-                "kotlin.compiler.jvmTarget": "17",
-                "files.watcherExclude": {
-                    "**/.git/objects/**": true,
-                    "**/build/**": true
-                }
-            }
-        }
-    },
-    "postCreateCommand": "cp /local.properties /workspaces/jarvis/local.properties 2>/dev/null; chmod +x /workspaces/jarvis/gradlew; cd /workspaces/jarvis && ./gradlew assembleDebug --no-daemon",
-    "remoteUser": "root",
-    "workspaceFolder": "/workspaces/jarvis",
-    "forwardPorts": []
+  "name": "Android Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "fwcd.kotlin",
+        "redhat.java"
+      ]
+    }
+  },
+  "postCreateCommand": "chmod +x gradlew || true",
+  "remoteUser": "root"
 }
